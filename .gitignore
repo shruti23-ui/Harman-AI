@@ -1,0 +1,48 @@
+# Binaries
+nats-server/nats-server
+nats-server-v*/
+*.tar.gz
+*.zip
+
+# Build artifacts
+*.exe
+*.dll
+*.so
+*.dylib
+
+# Test and benchmark outputs
+benchmark_results/*.txt
+benchmark_results/*.log
+
+# Go specific
+*.test
+*.out
+vendor/
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+env/
+venv/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Large files
+*.bin
+
+# Claude
+.claude/
+
+# NATS server repository
+nats-server/

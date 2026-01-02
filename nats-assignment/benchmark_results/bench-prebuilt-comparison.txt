@@ -1,0 +1,53 @@
+goos: windows
+goarch: amd64
+pkg: github.com/nats-io/nats-server/v2/server
+cpu: 13th Gen Intel(R) Core(TM) i5-13420H
+BenchmarkPublish/MsgSz=0b/Subs=None-12         	19340008	       321.7 ns/op	         0 %error
+BenchmarkPublish/MsgSz=0b/Subs=1xAsync-12      	 7674614	       716.2 ns/op	         0 %error
+BenchmarkPublish/MsgSz=0b/Subs=1xAsyncQueue-12 	 8107963	       700.3 ns/op	         0 %error
+BenchmarkPublish/MsgSz=0b/Subs=10xAsync-12     	 1528411	      4407 ns/op	         0 %error
+BenchmarkPublish/MsgSz=0b/Subs=10xAsyncQueue-12         	 9554418	       621.4 ns/op	         0 %error
+BenchmarkPublish/MsgSz=1b/Subs=None-12                  	37396294	       158.4 ns/op	   6.31 MB/s	         0 %error
+BenchmarkPublish/MsgSz=1b/Subs=1xAsync-12               	13864012	       393.7 ns/op	   2.54 MB/s	         0 %error
+BenchmarkPublish/MsgSz=1b/Subs=1xAsyncQueue-12          	15684998	       394.5 ns/op	   2.53 MB/s	         0 %error
+BenchmarkPublish/MsgSz=1b/Subs=10xAsync-12              	 2623476	      2299 ns/op	   0.43 MB/s	         0 %error
+BenchmarkPublish/MsgSz=1b/Subs=10xAsyncQueue-12         	10058720	       631.9 ns/op	   1.58 MB/s	         0 %error
+BenchmarkPublish/MsgSz=32b/Subs=None-12                 	14337992	       466.2 ns/op	  68.64 MB/s	         0 %error
+BenchmarkPublish/MsgSz=32b/Subs=1xAsync-12              	 7035259	       801.5 ns/op	  39.93 MB/s	         0 %error
+BenchmarkPublish/MsgSz=32b/Subs=1xAsyncQueue-12         	 7129051	       816.9 ns/op	  39.17 MB/s	         0 %error
+BenchmarkPublish/MsgSz=32b/Subs=10xAsync-12             	 1339290	      4844 ns/op	   6.61 MB/s	         0 %error
+BenchmarkPublish/MsgSz=32b/Subs=10xAsyncQueue-12        	 5777815	      1053 ns/op	  30.40 MB/s	         0 %error
+BenchmarkPublish/MsgSz=128b/Subs=None-12                	 4252677	      1243 ns/op	 102.99 MB/s	         0 %error
+BenchmarkPublish/MsgSz=128b/Subs=1xAsync-12             	 5771547	      1004 ns/op	 127.49 MB/s	         0 %error
+BenchmarkPublish/MsgSz=128b/Subs=1xAsyncQueue-12        	 5654052	      1315 ns/op	  97.32 MB/s	         0 %error
+BenchmarkPublish/MsgSz=128b/Subs=10xAsync-12            	 1827496	      3394 ns/op	  37.71 MB/s	         0 %error
+BenchmarkPublish/MsgSz=128b/Subs=10xAsyncQueue-12       	 7271845	       806.3 ns/op	 158.74 MB/s	         0 %error
+BenchmarkPublish/MsgSz=512b/Subs=None-12                	 2730228	      2516 ns/op	 203.46 MB/s	         0 %error
+BenchmarkPublish/MsgSz=512b/Subs=1xAsync-12             	 2481649	      2925 ns/op	 175.05 MB/s	         0 %error
+BenchmarkPublish/MsgSz=512b/Subs=1xAsyncQueue-12        	 1365530	      5936 ns/op	  86.26 MB/s	         0 %error
+BenchmarkPublish/MsgSz=512b/Subs=10xAsync-12            	  580996	     13481 ns/op	  37.98 MB/s	         0 %error
+BenchmarkPublish/MsgSz=512b/Subs=10xAsyncQueue-12       	 1482225	      4241 ns/op	 120.71 MB/s	         0 %error
+BenchmarkPublish/MsgSz=4096b/Subs=None-12               	  167146	     38261 ns/op	 107.05 MB/s	         0 %error
+BenchmarkPublish/MsgSz=4096b/Subs=1xAsync-12            	  169566	     33819 ns/op	 121.12 MB/s	         0 %error
+BenchmarkPublish/MsgSz=4096b/Subs=1xAsyncQueue-12       	  420222	     14086 ns/op	 290.79 MB/s	         0 %error
+BenchmarkPublish/MsgSz=4096b/Subs=10xAsync-12           	  391749	     16971 ns/op	 241.35 MB/s	         0 %error
+BenchmarkPublish/MsgSz=4096b/Subs=10xAsyncQueue-12      	  469944	     12612 ns/op	 324.78 MB/s	         0 %error
+BenchmarkPublish/MsgSz=32768b/Subs=None-12              	   89846	    128167 ns/op	 255.67 MB/s	         0 %error
+BenchmarkPublish/MsgSz=32768b/Subs=1xAsync-12           	  117718	     50649 ns/op	 646.96 MB/s	         0 %error
+BenchmarkPublish/MsgSz=32768b/Subs=1xAsyncQueue-12      	   36086	    246668 ns/op	 132.84 MB/s	         0 %error
+BenchmarkPublish/MsgSz=32768b/Subs=10xAsync-12          	   56822	    205467 ns/op	 159.48 MB/s	         0 %error
+BenchmarkPublish/MsgSz=32768b/Subs=10xAsyncQueue-12     	  114679	     52553 ns/op	 623.52 MB/s	         0 %error
+BenchmarkPublish/MsgSz=131072b/Subs=None-12             	   28674	    225377 ns/op	 581.57 MB/s	         0 %error
+BenchmarkPublish/MsgSz=131072b/Subs=1xAsync-12          	   31047	    311529 ns/op	 420.74 MB/s	         0 %error
+BenchmarkPublish/MsgSz=131072b/Subs=1xAsyncQueue-12     	   29324	    485962 ns/op	 269.72 MB/s	         0 %error
+BenchmarkPublish/MsgSz=131072b/Subs=10xAsync-12         	   14047	    369185 ns/op	 355.03 MB/s	         0 %error
+BenchmarkPublish/MsgSz=131072b/Subs=10xAsyncQueue-12    	   30307	    200717 ns/op	 653.02 MB/s	         0 %error
+BenchmarkPublish/MsgSz=524288b/Subs=None-12             	   10000	   1038858 ns/op	 504.68 MB/s	         0 %error
+BenchmarkPublish/MsgSz=524288b/Subs=1xAsync-12          	   10000	   2253879 ns/op	 232.62 MB/s	         0 %error
+BenchmarkPublish/MsgSz=524288b/Subs=1xAsyncQueue-12     	   10000	   3278200 ns/op	 159.93 MB/s	         0 %error
+BenchmarkPublish/MsgSz=524288b/Subs=10xAsync-12         	   10000	   1887196 ns/op	 277.81 MB/s	         0 %error
+BenchmarkPublish/MsgSz=524288b/Subs=10xAsyncQueue-12    	   10000	    872347 ns/op	 601.01 MB/s	         0 %error
+BenchmarkPublish/MsgSz=1048576b/Subs=None-12            	   10000	   3194402 ns/op	 328.25 MB/s	         0 %error
+BenchmarkPublish/MsgSz=1048576b/Subs=1xAsync-12         	   10000	   2645328 ns/op	 396.39 MB/s	         0 %error
+BenchmarkPublish/MsgSz=1048576b/Subs=1xAsyncQueue-12    	   10000	   2927150 ns/op	 358.22 MB/s	         0 %error
+BenchmarkPublish/MsgSz=1048576b/Subs=10xAsync-12        	

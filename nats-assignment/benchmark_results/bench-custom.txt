@@ -1,0 +1,33 @@
+go: downloading github.com/nats-io/nats.go v1.47.0
+goos: windows
+goarch: amd64
+pkg: github.com/nats-io/nats-server/v2/server
+cpu: 13th Gen Intel(R) Core(TM) i5-13420H
+BenchmarkPublish/MsgSz=0b/Subs=None-12         	36809544	       138.5 ns/op	         0 %error
+BenchmarkPublish/MsgSz=0b/Subs=1xAsync-12      	16510399	       368.8 ns/op	         0 %error
+BenchmarkPublish/MsgSz=0b/Subs=1xAsyncQueue-12 	16087347	       386.3 ns/op	         0 %error
+BenchmarkPublish/MsgSz=0b/Subs=10xAsync-12     	 2483428	      2497 ns/op	         0 %error
+BenchmarkPublish/MsgSz=0b/Subs=10xAsyncQueue-12         	 9534849	       642.3 ns/op	         0 %error
+PASS
+ok  	github.com/nats-io/nats-server/v2/server	34.916s
+goos: windows
+goarch: amd64
+pkg: github.com/nats-io/nats-server/v2/server
+cpu: 13th Gen Intel(R) Core(TM) i5-13420H
+BenchmarkPublish/MsgSz=128b/Subs=None-12         	 4746433	       664.5 ns/op	 192.63 MB/s	         0 %error
+BenchmarkPublish/MsgSz=128b/Subs=1xAsync-12      	 4612440	       767.1 ns/op	 166.87 MB/s	         0 %error
+BenchmarkPublish/MsgSz=128b/Subs=1xAsyncQueue-12 	 4673268	       750.9 ns/op	 170.46 MB/s	         0 %error
+BenchmarkPublish/MsgSz=128b/Subs=10xAsync-12     	 1000000	      3525 ns/op	  36.31 MB/s	         0 %error
+BenchmarkPublish/MsgSz=128b/Subs=10xAsyncQueue-12         	 4346179	       825.6 ns/op	 155.04 MB/s	         0 %error
+BenchmarkPublish/MsgSz=4096b/Subs=None-12                 	  266631	     15941 ns/op	 256.95 MB/s	         0 %error
+BenchmarkPublish/MsgSz=4096b/Subs=1xAsync-12              	  232056	     15482 ns/op	 264.56 MB/s	         0 %error
+BenchmarkPublish/MsgSz=4096b/Subs=1xAsyncQueue-12         	  234205	     13502 ns/op	 303.37 MB/s	         0 %error
+BenchmarkPublish/MsgSz=4096b/Subs=10xAsync-12             	  255589	     15443 ns/op	 265.24 MB/s	         0 %error
+BenchmarkPublish/MsgSz=4096b/Subs=10xAsyncQueue-12        	  267404	     12561 ns/op	 326.10 MB/s	         0 %error
+BenchmarkPublish/MsgSz=1048576b/Subs=None-12              	   10000	   2056015 ns/op	 510.00 MB/s	         0 %error
+BenchmarkPublish/MsgSz=1048576b/Subs=1xAsync-12           	   10000	   2008282 ns/op	 522.13 MB/s	         0 %error
+BenchmarkPublish/MsgSz=1048576b/Subs=1xAsyncQueue-12      	   10000	   2007808 ns/op	 522.25 MB/s	         0 %error
+BenchmarkPublish/MsgSz=1048576b/Subs=10xAsync-12          	   10000	   4466719 ns/op	 234.75 MB/s	         0 %error
+BenchmarkPublish/MsgSz=1048576b/Subs=10xAsyncQueue-12     	   10000	   2018940 ns/op	 519.37 MB/s	         0 %error
+PASS
+ok  	github.com/nats-io/nats-server/v2/server	170.217s
