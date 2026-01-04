@@ -57,8 +57,6 @@ Based on my testing on Intel Core i5-13420H (13th Gen, 12 cores) running Windows
 
 ### Overall Assessment
 
-**Rating: 9 out of 10**
-
 NATS is an exceptional messaging system that delivers on its promise of high performance and operational simplicity. It occupies a unique position between lightweight systems like Redis Pub/Sub and heavyweight platforms like Apache Kafka.
 
 ---
